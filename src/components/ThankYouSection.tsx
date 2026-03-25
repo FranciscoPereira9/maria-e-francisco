@@ -21,7 +21,7 @@ const ThankYouSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="space-y-6"
           >
-            <h2 className="font-script text-3xl md:text-5xl text-terracotta">
+            <h2 className="font-script text-3xl md:text-4xl text-terracotta">
               Thank You
             </h2>
             <div className="section-divider" />

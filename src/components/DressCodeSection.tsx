@@ -11,7 +11,7 @@ const DressCodeSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="font-script text-3xl md:text-5xl text-terracotta mb-4">
+          <h2 className="font-script text-3xl md:text-4xl text-terracotta mb-4">
             Dress Code
           </h2>
           <div className="section-divider" />
