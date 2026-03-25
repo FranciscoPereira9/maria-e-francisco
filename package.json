@@ -1,8 +1,7 @@
 {
   "name": "vite_react_shadcn_ts",
   "homepage": "https://franciscopereira9.github.io/maria-e-francisco/",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
