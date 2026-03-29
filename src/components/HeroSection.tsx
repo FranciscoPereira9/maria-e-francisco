@@ -79,7 +79,7 @@ const HeroSection = () => {
         <div className="mt-8">
           <div className="section-divider mb-6" />
           <p className="font-elegant text-xl md:text-2xl text-white tracking-wide">
-            Saturday, July 18th, 2026
+            Sábado, 18 de Julho 2026
           </p>
           <p className="font-elegant text-lg text-white mt-2">
             Vairão, Portugal

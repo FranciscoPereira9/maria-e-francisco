@@ -1,8 +1,29 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import thankyou from "@/assets/thankyou.jpg";
 import weddingLogo from "@/assets/logo-wedding.png";
 
+const WEDDING_DATE = new Date("2026-07-18T14:30:00");
+
+function getTimeLeft() {
+  const now = new Date();
+  const diff = Math.max(0, WEDDING_DATE.getTime() - now.getTime());
+  return {
+    days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+    minutes: Math.floor((diff / (1000 * 60)) % 60),
+    seconds: Math.floor((diff / 1000) % 60),
+  };
+}
+
 const ThankYouSection = () => {
+  const [timeLeft, setTimeLeft] = useState(getTimeLeft());
+
+  useEffect(() => {
+    const interval = setInterval(() => setTimeLeft(getTimeLeft()), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="py-20 px-6 bg-cream">
       <div className="max-w-3xl mx-auto">
@@ -22,18 +43,20 @@ const ThankYouSection = () => {
             className="space-y-6"
           >
             <h2 className="font-script text-3xl md:text-4xl text-terracotta">
-              Thank You
+              Obrigado
             </h2>
             <div className="section-divider" />
 
             <p className="font-elegant text-lg md:text-xl text-foreground max-w-xl mx-auto leading-relaxed">
-              We are so grateful to have you as part of our special day. Your
-              presence and love mean the world to us as we begin this new
-              chapter of our lives together.
+              Obrigado por estarem connosco, por fazerem parte da nossa história
+              e por celebrarem este momento tão especial ao nosso lado.
+            </p>
+            <p className="font-elegant text-lg md:text-xl text-foreground max-w-xl mx-auto leading-relaxed">
+              Estamos muito felizes por vos ter connosco neste dia.
             </p>
 
             <p className="font-elegant text-lg text-muted-foreground italic">
-              With love and gratitude,
+              Com carinho,
             </p>
 
             <p className="font-script text-2xl text-sage-dark">
@@ -58,6 +81,41 @@ const ThankYouSection = () => {
               />
             </div>
           </motion.div>
+        </motion.div>
+
+        {/* Compact Countdown */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-12 text-center"
+        >
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 sm:gap-x-6">
+            {[
+              { label: "dias", value: timeLeft.days },
+              { label: "horas", value: timeLeft.hours },
+              { label: "minutos", value: timeLeft.minutes },
+              { label: "segundos", value: timeLeft.seconds },
+            ].map((unit, i) => (
+              <div
+                key={unit.label}
+                className="flex items-baseline gap-1 sm:gap-2"
+              >
+                <span className="font-elegant text-lg sm:text-xl md:text-2xl text-foreground font-medium tabular-nums">
+                  {String(unit.value).padStart(2, "0")}
+                </span>
+                <span className="font-elegant text-[9px] sm:text-[10px] md:text-xs text-muted-foreground uppercase tracking-[0.12em] sm:tracking-widest">
+                  {unit.label}
+                </span>
+                {i < 3 && (
+                  <span className="font-elegant text-base sm:text-lg text-muted-foreground/50 mx-1 sm:mx-2">
+                    ·
+                  </span>
+                )}
+              </div>
+            ))}
+          </div>
         </motion.div>
       </div>
 

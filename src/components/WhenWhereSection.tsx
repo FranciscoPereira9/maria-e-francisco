@@ -23,7 +23,7 @@ const WhenWhereSection = () => {
           className="text-center mb-16"
         >
           <h2 className="font-script text-3xl md:text-4xl text-terracotta mb-4">
-            When & Where
+            Onde & Quando
           </h2>
           <div className="section-divider" />
         </motion.div>
@@ -37,7 +37,7 @@ const WhenWhereSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="wedding-card text-center"
           >
-            <div className="h-36 mb-4">
+            <div className="h-52 mb-4">
               <img
                 src={iconCeremony}
                 alt="Ceremony"
@@ -46,7 +46,7 @@ const WhenWhereSection = () => {
             </div>
 
             <h3 className="font-script text-2xl md:text-3xl text-sage-dark h-10 flex items-center justify-center">
-              Ceremony
+              Cerimónia
             </h3>
 
             <div className="font-elegant text-foreground">
@@ -74,7 +74,7 @@ const WhenWhereSection = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="wedding-card text-center"
           >
-            <div className="h-36 mb-4">
+            <div className="h-52 mb-4">
               <img
                 src={iconReception}
                 alt="Reception"
@@ -83,12 +83,12 @@ const WhenWhereSection = () => {
             </div>
 
             <h3 className="font-script text-2xl md:text-3xl text-sage-dark h-10 flex items-center justify-center">
-              Reception
+              Receção
             </h3>
 
             <div className="font-elegant text-foreground">
               <p className="h-8 flex items-center justify-center text-sm uppercase tracking-widest text-muted-foreground">
-                Following the ceremony
+                Seguido da Cerimónia
               </p>
 
               <p className="h-14 flex items-center justify-center text-xl font-medium">

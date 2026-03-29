@@ -16,8 +16,8 @@ const DressCodeSection = () => {
           </h2>
           <div className="section-divider" />
           <p className="font-elegant text-lg text-muted-foreground mt-6 max-w-xl mx-auto">
-            We kindly ask our guests to join us in celebrating with elegant
-            attire
+            Um dia especial merece um cuidado especial. <br></br> Ficam aqui
+            algumas sugestões para o que vestir.
           </p>
         </motion.div>
 
@@ -32,25 +32,25 @@ const DressCodeSection = () => {
           >
             <div className="wedding-card h-full flex flex-col">
               <h3 className="font-script text-2xl md:text-3xl text-sage-dark mb-6">
-                Ladies
+                Mulheres
               </h3>
 
               <div className="font-elegant text-foreground flex flex-col flex-1">
                 <div className="space-y-4 flex-1">
-                  <p className="text-lg">Cocktail or evening dress</p>
-                  <p className="text-muted-foreground">
-                    Long or midi length dresses in soft, elegant tones
-                  </p>
+                  <p className="text-lg">Vestido Formal / Cocktail</p>
+                  {/*<p className="text-muted-foreground">
+                    Se possível, pedimos que evitem tons brancos e pretos.
+                  </p>*/}
                 </div>
                 <div className="pt-4 border-t border-terracotta-light mt-4">
                   <p className="text-sm text-terracotta font-medium">
-                    Kindly avoid white and black
+                    A evitar tons de preto e branco.
                   </p>
                 </div>
               </div>
 
               {/* Color swatches */}
-              <div className="flex justify-center gap-3 mt-6 pt-4">
+              {/*<div className="flex justify-center gap-3 mt-6 pt-4">
                 <div
                   className="w-8 h-8 rounded-full bg-[hsl(18,40%,70%)] border-2 border-background"
                   title="Terracotta"
@@ -67,7 +67,7 @@ const DressCodeSection = () => {
                   className="w-8 h-8 rounded-full bg-[hsl(350,30%,75%)] border-2 border-background"
                   title="Dusty Rose"
                 />
-              </div>
+              </div>*/}
             </div>
           </motion.div>
 
@@ -81,26 +81,26 @@ const DressCodeSection = () => {
           >
             <div className="wedding-card h-full flex flex-col">
               <h3 className="font-script text-2xl md:text-3xl text-sage-dark mb-6">
-                Gentlemen
+                Homens
               </h3>
 
               <div className="font-elegant text-foreground flex flex-col flex-1">
                 <div className="space-y-4 flex-1">
-                  <p className="text-lg">Suit and tie</p>
-                  <p className="text-muted-foreground">
-                    Light or neutral colored suits welcome for the summer
-                    celebration
-                  </p>
+                  <p className="text-lg">Fato Escuro Formal</p>
+                  {/*<p className="text-muted-foreground">
+                    Se possível, pedimos que evitem fatos claros e calçado
+                    informal.
+                  </p>*/}
                 </div>
                 <div className="pt-4 border-t border-terracotta-light mt-4">
                   <p className="text-sm text-terracotta font-medium">
-                    No jeans or sneakers please
+                    A evitar fatos claros e calçado informal.
                   </p>
                 </div>
               </div>
 
               {/* Color swatches */}
-              <div className="flex justify-center gap-3 mt-6 pt-4">
+              {/*<div className="flex justify-center gap-3 mt-6 pt-4">
                 <div
                   className="w-8 h-8 rounded-full bg-[hsl(220,10%,40%)] border-2 border-background"
                   title="Charcoal"
@@ -117,7 +117,7 @@ const DressCodeSection = () => {
                   className="w-8 h-8 rounded-full bg-[hsl(130,15%,45%)] border-2 border-background"
                   title="Olive"
                 />
-              </div>
+              </div>*/}
             </div>
           </motion.div>
         </div>
