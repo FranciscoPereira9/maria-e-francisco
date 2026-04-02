@@ -48,8 +48,9 @@ const ThankYouSection = () => {
             <div className="section-divider" />
 
             <p className="font-elegant text-lg md:text-xl text-foreground max-w-xl mx-auto leading-relaxed">
-              Obrigado por estarem connosco, por fazerem parte da nossa história
-              e por celebrarem este momento tão especial ao nosso lado.
+              Obrigado por estarem presentes nas nossas vidas, por fazerem parte
+              da nossa história e por celebrarem este momento tão especial ao
+              nosso lado.
             </p>
             <p className="font-elegant text-lg md:text-xl text-foreground max-w-xl mx-auto leading-relaxed">
               Estamos muito felizes por vos ter connosco neste dia.
@@ -133,7 +134,7 @@ const ThankYouSection = () => {
           className="w-16 h-16 mx-auto mb-4 object-contain opacity-60"
         />
         <p className="font-elegant text-sm text-muted-foreground tracking-widest uppercase">
-          July 18th, 2026 • Vairão, Portugal
+          18 de Julho de 2026 • Vairão, Portugal
         </p>
       </motion.footer>
     </section>

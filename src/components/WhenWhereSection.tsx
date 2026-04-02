@@ -102,6 +102,27 @@ const WhenWhereSection = () => {
             </div>
           </motion.div>
         </div>
+
+        {/* RSVP Button */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          className="mt-10 text-center"
+        >
+          <a
+            href="https://forms.gle/XC6jUNPE9UE6dSWSA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-2 px-8 py-3 font-elegant text-sm uppercase tracking-widest border-2 border-terracotta text-terracotta rounded-full hover:bg-terracotta hover:text-primary-foreground transition-colors duration-300"
+          >
+            <span>RSVP</span>
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+              →
+            </span>
+          </a>
+        </motion.div>
       </div>
     </section>
   );
