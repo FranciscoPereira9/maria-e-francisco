@@ -103,10 +103,16 @@ const WeddingPresentsSection = () => {
                     </p>
                     <div className="pt-4 space-y-3">
                       <p className="font-elegant text-sm text-muted-foreground uppercase tracking-widest">
+                        Beneficiário
+                      </p>
+                      <p className="font-elegant text-foreground text-sm md:text-base tracking-wide font-medium whitespace-nowrap">
+                        Francisco Pereira & Maria Caiado
+                      </p>
+                      <p className="font-elegant text-sm text-muted-foreground uppercase tracking-widest">
                         IBAN
                       </p>
-                      <p className="font-elegant text-foreground text-sm md:text-base tracking-wide font-medium break-all">
-                        PT50 0000 0000 0000 0000 0000 0
+                      <p className="font-elegant text-foreground text-sm md:text-base tracking-wide font-medium whitespace-nowrap">
+                        NL02 REVO 9676 6316 04
                       </p>
                     </div>
                     <div className="pt-2">
