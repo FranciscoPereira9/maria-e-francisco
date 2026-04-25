@@ -51,7 +51,7 @@ const PhotoGallerySection = () => {
   return (
     <section className="py-20 md:py-28 bg-cream overflow-hidden">
       <div className="w-full px-4 md:px-8">
-        <motion.div
+        {/*<motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -62,7 +62,7 @@ const PhotoGallerySection = () => {
             ❤
           </h2>
           <div className="section-divider" />
-        </motion.div>
+        </motion.div>*/}
 
         <motion.div
           initial={{ opacity: 0 }}

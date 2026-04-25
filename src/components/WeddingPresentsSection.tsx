@@ -137,7 +137,7 @@ const WeddingPresentsSection = () => {
                     <div className="flex items-center justify-center gap-2 text-cream">
                       <RotateCw className="w-4 h-4 animate-pulse" />
                       <span className="font-elegant text-sm tracking-wide">
-                        Tap to flip back
+                        Obrigado 🤍
                       </span>
                     </div>
                   </div>

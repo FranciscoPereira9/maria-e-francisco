@@ -59,10 +59,16 @@ const WhenWhereSection = () => {
                 Mosteiro de São Salvador de Vairão
               </p>
 
-              <div className="h-8 flex items-center justify-center gap-2 text-muted-foreground">
-                <MapPin className="w-4 h-4 text-terracotta flex-shrink-0" />
-                <span>4485-662 Vairão, Portugal</span>
-              </div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://maps.app.goo.gl/5bm24HpBgT8JnhBu8"
+              >
+                <div className="h-8 flex items-center justify-center gap-2 text-muted-foreground underline">
+                  <MapPin className="w-4 h-4 text-terracotta flex-shrink-0" />
+                  <span>4485-662 Vairão, Portugal</span>
+                </div>
+              </a>
             </div>
           </motion.div>
 
@@ -71,7 +77,7 @@ const WhenWhereSection = () => {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             className="wedding-card text-center"
           >
             <div className="h-52 mb-4">
@@ -95,10 +101,16 @@ const WhenWhereSection = () => {
                 Quinta do Alferes de Crasto
               </p>
 
-              <div className="h-8 flex items-center justify-center gap-2 text-muted-foreground">
-                <MapPin className="w-4 h-4 text-terracotta flex-shrink-0" />
-                <span>R. do Crasto, 4485-684 Vairão, Portugal</span>
-              </div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://maps.app.goo.gl/CJYXWfDMjxfKZLnn8"
+              >
+                <div className="h-8 flex items-center justify-center gap-2 text-muted-foreground underline">
+                  <MapPin className="w-4 h-4 text-terracotta flex-shrink-0" />
+                  <span>R. do Crasto, 4485-684 Vairão, Portugal</span>
+                </div>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -108,9 +120,12 @@ const WhenWhereSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           className="mt-10 text-center"
         >
+          <p className="mb-3 font-elegant text-sm text-muted-foreground">
+            Confirmem aqui a vossa presença!
+          </p>
           <a
             href="https://forms.gle/XC6jUNPE9UE6dSWSA"
             target="_blank"
