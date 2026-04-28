@@ -32,7 +32,7 @@ const DressCodeSection = () => {
           >
             <div className="wedding-card h-full flex flex-col">
               <h3 className="font-script text-2xl md:text-3xl text-sage-dark mb-6">
-                Mulheres
+                Senhoras
               </h3>
 
               <div className="font-elegant text-foreground flex flex-col flex-1">
